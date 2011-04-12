@@ -8,7 +8,29 @@ First you need to downlaod Pathogen:
 http://www.vim.org/scripts/script.php?script_id=2332
 Put it in your **~/.vim/autoload**
 
-Pathogen autoloads all the plugins located in **.vim/bundle**.
+Pathogen autoloads all the plugins located in **.vim/bundle**::
+
+    $ mkdir ~/.vim/bundle
+
+If you use git, you can use git-submodule to get all the plugins listed
+below::
+
+    $ cd .vim
+    $ git init
+    $ git submodule init bundle
+    $ git submodule add <git url (listed below)> bundle/<plugin-name>
+
+this should add a **.gitmodules** file which contains the config parts as
+listed below, e.g.::
+
+    [submodule "bundle/vim-surround"]
+        path = bundle/vim-surround
+        url = https://github.com/tpope/vim-surround.git
+
+For more information about submodules, use::
+
+    $ git submodule --help
+
 
 Overview
 --------
