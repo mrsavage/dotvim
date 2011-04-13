@@ -8,9 +8,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/vim-supertab"]
-	path = bundle/vim-supertab
-	url = git://github.com/tsaleh/vim-supertab.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
@@ -62,3 +59,6 @@
 [submodule "bundle/vim-pylint"]
 	path = bundle/vim-pylint
 	url = https://github.com/rygwdn/vim-pylint.git
+[submodule "bundle/vim-supertab"]
+	path = bundle/vim-supertab
+	url = https://github.com/ervandew/supertab.git
