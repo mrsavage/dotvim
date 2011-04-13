@@ -171,7 +171,8 @@ let g:NERDTreeIgnore=['\.pyc$', '\.pyo$', '\~$']
 let g:NERDTreeChDirMode=2
 
 "" supertab plugin
-let g:SuperTabDefaultCompletionType = 'context'
+"let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabDefaultCompletionType = "<c-x><c-p>"
 
 "" python syntax file
 let python_highlight_all=1

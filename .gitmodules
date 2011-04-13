@@ -8,9 +8,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-supertab"]
+	path = bundle/vim-supertab
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/cocoa-vim"]
 	path = bundle/cocoa-vim
 	url = https://github.com/msanders/cocoa.vim.git
@@ -32,9 +32,6 @@
 [submodule "bundle/The-NERD-Commenter"]
 	path = bundle/The-NERD-Commenter
 	url = https://github.com/vim-scripts/The-NERD-Commenter.git
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = https://github.com/vim-scripts/vcscommand.vim.git
@@ -59,6 +56,3 @@
 [submodule "bundle/vim-pylint"]
 	path = bundle/vim-pylint
 	url = https://github.com/rygwdn/vim-pylint.git
-[submodule "bundle/vim-supertab"]
-	path = bundle/vim-supertab
-	url = https://github.com/ervandew/supertab.git

@@ -39,7 +39,6 @@ Overview
 #. fugitive.vim: Git wrapper so awesome, it should be illegal
 #. Command-T: Fast file navigation for VIM
 #. SuperTab continued.: Do all your insert-mode completion with Tab.
-#. snipMate: TextMate-style snippets for Vim
 #. cocoa.vim: Plugin for Cocoa/Objective-C development
 #. pythoncomplete: Python Omni Completion
 #. The NERD tree: A tree explorer plugin for navigating the filesystem
@@ -47,7 +46,6 @@ Overview
 #. repeat.vim: Use the repeat command (.) with supported plugins
 #. Align: Help folks to align text, eqns, declarations, tables, etc
 #. The NERD Commenter: A plugin that allows for easy commenting of code for many filetypes.
-#. Solarized : Beautiful dual light/dark, selective contrast, GUI/256/16 colorscheme
 #. vcscommand.vim : CVS/SVN/SVK/git/hg/bzr integration plugin
 #. colorschemes: collection of vim colorschemes
 #. pythonhelper : Displays Python class, method or function the cursor is in on the status line 
@@ -84,12 +82,6 @@ Plugins
     [submodule "bundle/vim-supertab"]
         path = bundle/vim-supertab
         url = https://github.com/ervandew/supertab.git
-
-#. snipmate: http://www.vim.org/scripts/script.php?script_id=2540
-
-    [submodule "bundle/snipmate"]
-        path = bundle/snipmate
-        url = git://github.com/msanders/snipmate.vim.git
 
 #. cocoa.vim: http://www.vim.org/scripts/script.php?script_id=2674
 
@@ -132,12 +124,6 @@ Plugins
     [submodule "bundle/The-NERD-Commenter"]
         path = bundle/The-NERD-Commenter
         url = https://github.com/vim-scripts/The-NERD-Commenter.git
-
-#. solarized: http://www.vim.org/scripts/script.php?script_id=3520
-
-    [submodule "bundle/solarized"]
-        path = bundle/solarized
-        url = git://github.com/altercation/vim-colors-solarized.git
 
 #. vcscommand: http://www.vim.org/scripts/script.php?script_id=90
 
