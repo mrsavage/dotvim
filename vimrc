@@ -140,12 +140,12 @@ map <leader>e :e <C-R>=expand("%:h")<cr>/
 " backup, swap, views
 set backup                       " backups are nice ...
 set backupdir=$HOME/.vimbackup// " but not when they clog .
-set directory=$HOME/.vimswap//   " Same for swap files
+"set directory=$HOME/.vimswap//   " Same for swap files
 set viewdir=$HOME/.vimviews//    " same for view files
 
 "" Creating directories if they don't exist
 silent execute '!mkdir -p $HOME/.vimbackup'
-silent execute '!mkdir -p $HOME/.vimswap'
+"silent execute '!mkdir -p $HOME/.vimswap'
 silent execute '!mkdir -p $HOME/.vimviews'
 au BufWinLeave * silent! mkview   " make vim save view (state) (folds, cursor, etc)
 au BufWinEnter * silent! loadview " make vim load view (state) (folds, cursor, etc)
@@ -223,8 +223,11 @@ if has("autocmd") && !exists("autocommands_loaded")
   autocmd FileType python set omnifunc=pythoncomplete#Complete
   autocmd FileType python compiler pylint
 
+  " add cusstom commentstring for nginx
+  autocmd FileType nginx let &l:commentstring='#%s'
+
   autocmd BufNewFile,BufRead *.dtml setfiletype css
-  autocmd BufNewFile,BufRead *.zpt setfiletype html
+  autocmd BufNewFile,BufRead *.pt setfiletype html
   autocmd BufNewFile,BufRead *.zcml setfiletype xml
   autocmd BufNewFile,BufRead *.cpy setfiletype python
   autocmd BufNewFile,BufRead *.rst setfiletype rest
