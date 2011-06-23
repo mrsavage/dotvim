@@ -163,12 +163,12 @@ nnoremap <silent> <f3> :Grep <cr>
 nnoremap <silent> <s-f3> :Rgrep <cr>
 
 "" nerdtree plugin
-map <silent><c-tab> :NERDTreeToggle <cr>
-nnoremap <silent> <c-f> :call FindInNERDTree() <cr>
-let g:NERDTreeMapActivateNode="<cr>"
-let g:NERDTreeMapOpenSplit="<s-cr>"
-let g:NERDTreeIgnore=['\.pyc$', '\.pyo$', '\~$']
-let g:NERDTreeChDirMode=2
+nmap <tab> :NERDTreeToggle <cr>
+let g:NERDTreeMapActivateNode = '<return>'
+let g:NERDTreeMapOpenSplit = '<m-return>'
+let NERDTreeChDirMode = 2
+let NERDTreeIgnore = ['\.pyc$',]
+let NERDTreeShowHidden = 0
 
 "" supertab plugin
 "let g:SuperTabDefaultCompletionType = 'context'
