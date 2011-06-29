@@ -31,6 +31,10 @@ For more information about submodules, use::
 
     $ git submodule --help
 
+Make NerdTree change dir to currently opened file::
+
+    $ patch -p0 -i nerdtree.patch
+
 
 Overview
 --------

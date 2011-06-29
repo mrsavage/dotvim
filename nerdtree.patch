@@ -1,0 +1,20 @@
+--- bundle/nerdtree/plugin/NERD_tree.vim old
++++ bundle/nerdtree/plugin/NERD_tree.vim new
+@@ -1934,7 +1934,7 @@ function! s:Path.changeToDir()
+ 
+     try
+         execute "cd " . dir
+-        call s:echo("CWD is now: " . getcwd())
++        " call s:echo("CWD is now: " . getcwd())
+     catch
+         throw "NERDTree.PathChangeError: cannot change CWD to " . dir
+     endtry
+@@ -3572,6 +3572,8 @@ function! s:activateNode(forceKeepWindowOpen)
+     let treenode = s:TreeFileNode.GetSelected()
+     if treenode != {}
+         call treenode.activate(a:forceKeepWindowOpen)
++        " XXX: ramonski: change to this directory
++        call treenode.path.changeToDir()
+     else
+         let bookmark = s:Bookmark.GetSelected()
+         if !empty(bookmark)
