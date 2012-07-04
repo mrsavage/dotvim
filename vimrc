@@ -217,7 +217,7 @@ if has("autocmd") && !exists("autocommands_loaded")
     \ endif
 
   autocmd FileType javascript set ts=4 sw=4
-  autocmd FileType html set ts=2 sw=2 expandtab
+  autocmd FileType html set softtabstop=2 ts=2 sw=2 expandtab
   autocmd FileType CHANGELOG set ts=4 sw=4 expandtab
   autocmd FileType cfg set ts=4 sw=4 expandtab
   autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -247,8 +247,8 @@ if has("autocmd") && !exists("autocommands_loaded")
   autocmd FileType javscript abbr kvim /* vim: set ft=javscript ts=4 sw=4 expandtab : */
   autocmd FileType rst abbr kvim .. vim: set ft=rst ts=4 sw=4 expandtab tw=78 :
   autocmd FileType python abbr kvim # vim: set ft=python ts=4 sw=4 expandtab :
-  autocmd FileType xml abbr kvim <!-- vim: set ft=xml ts=2 sw=2 expandtab : -->
-  autocmd FileType html abbr kvim <!-- vim: set ft=html ts=2 sw=2 expandtab : -->
+  autocmd FileType xml abbr kvim <!-- vim: set ft=xml softtabstop=2 ts=2 sw=2 expandtab : -->
+  autocmd FileType html abbr kvim <!-- vim: set ft=html softtabstop=2 ts=2 sw=2 expandtab : -->
   autocmd FileType changelog abbr kvim vim: set ft=changelog ts=4 sw=4 expandtab :
   autocmd FileType cfg abbr kvim # vim: set ft=cfg ts=4 sw=4 expandtab :
   autocmd FileType config abbr kvim # vim: set ft=config ts=4 sw=4 expandtab :
